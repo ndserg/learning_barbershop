@@ -41,7 +41,7 @@
 				<li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
 			</ul>
 
-			<section> class="product-gallery">
+			<section class="product-gallery">
 				<h2 class="visually-hidden">Изображения товара</h2>
 				<p>
 					<img src="img/product-big.jpg" width="460" height="498" alt="Картинка товара большая" class="product-image">
@@ -113,8 +113,15 @@
   		<section class="login-form">
   			<h2>Личный кабинет</h2>
   			<p>Введите пожалуйста свой логин и пароль.</p>
-  			<!--Здесь будет форма-->
-  			<button type="button" class="popup-close">Закрыть</button>
+  			<form action="post" class="accaunt-login">
+                <input type="text" name="login" placeholder="Логин" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <label><input type="checkbox" name="remember" checked>Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>
+                <button type="submit">Войти</button>
+  			
+            </form>
+            <button type="button" class="popup-close">Закрыть</button>
   		</section>
 
   </body>

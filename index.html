@@ -55,7 +55,7 @@
 
 			</section>
 
-			<section>
+			<section class="idex-section">
 
 				<h2 class="section-title">Новости</h2>
 				<ul class="news">
@@ -72,7 +72,7 @@
 
 			</section>
 
-			<section>
+			<section class="idex-section">
 
 				<h2 class="section-title">Фотогалерея</h2>
 
@@ -85,7 +85,7 @@
 
 			</section>
 
-			<section>
+			<section class="idex-section">
 				
 				<h2 class="section-title">Контактная информация</h2>
 
@@ -104,13 +104,22 @@
 
 			</section>
 
-			<section>
+			<section class="idex-section">
 				
 				<h2 class="section-title">Записаться</h2>
 				<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-				<!--Здесь будет форма-->
-				<button type="submit">Отправить</button>
-
+				<form class="registration-form" action="post">
+                    <label for="date">Дата</label>
+                    <input type="date" name="date" id="date" placeholder="08.10.2017">
+                    <label for="time">Время</label>
+                    <input type="time" name="time" id="time" placeholder="10:00">
+                    <label for="first-Name">Ваше имя</label>
+                    <input type="text" name="first-Name" id="first-Name" placeholder="Борода">
+                    <label for="telephone">Телефон</label>
+                    <input type="telephone" name="telephone" id="telephone" placeholder="+7-123-456-78-90">
+                    <button type="submit">Отправить</button>
+                </form>
+				
 			</section>
 
 		</main>
@@ -143,12 +152,21 @@
   		<section class="login-form">
   			<h2>Личный кабинет</h2>
   			<p>Введите пожалуйста свой логин и пароль.</p>
-  			<!--Здесь будет форма-->
-  			<button type="button" class="popup-close">Закрыть</button>
+  			<form action="post" class="accaunt-login">
+                <input type="text" name="login" placeholder="Логин" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <label><input type="checkbox" name="remember" checked>Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>
+                <button type="submit">Войти</button>
+  			
+            </form>
+
+            <button type="button" class="popup-close">Закрыть</button>
   		</section>
 
   		<section class="popup-map">
   			<h2>Как до нас добраться</h2>
+            <img src="img/map.png" width="766" height="560" alt="Схема проезда">
   			<button type="button" class="popup-close">Закрыть</button>
   		</section>
 

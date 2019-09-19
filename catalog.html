@@ -42,7 +42,24 @@
 			
 			<section class="filters">
 				<h2>Фильтр товаров</h2>
-				<!--здесь будет форма-->
+				<form action="post">
+                    <fieldset>
+                        <legend>Производители:</legend>
+                        <label><input type="checkbox" name="Baxter-of-California" value="Baxter-of-California">Baxter of California</label><br>
+                        <label><input type="checkbox" name="Mr-Natty" value="Mr-Natty" checked>Mr Natty</label><br>
+                        <label><input type="checkbox" name="Suavecito" value="Suavecito" checked>Suavecito</label><br>
+                        <label><input type="checkbox" name="Malin-Goetz" value="Malin-Goetz">Malin+Goetz</label><br>
+                        <label><input type="checkbox" name="Murrays" value="Murrays">Murray’s</label><br>
+                        <label><input type="checkbox" name="American-Crew" value="American-Crew" checked>American Crew</label>
+                    </fieldset> 
+
+                    <fieldset>
+                    <legend>Группы товаров:</legend>
+                        <label><input type="radio" name="accesories" value="1">Бритвенные  принадлежности</label><br>
+                        <label><input type="radio" name="accesories" value="2" checked>Средства для ухода</label><br>
+                        <label><input type="radio" name="accesories" value="3">Аксессуары</label><br>
+                    </fieldset>          
+                </form>
 			
 			</section>
 
@@ -184,11 +201,19 @@
 		</footer>
   
   		<section class="login-form">
-  			<h2>Личный кабинет</h2>
-  			<p>Введите пожалуйста свой логин и пароль.</p>
-  			<!--Здесь будет форма-->
-  			<button type="button" class="popup-close">Закрыть</button>
-  		</section>
+            <h2>Личный кабинет</h2>
+            <p>Введите пожалуйста свой логин и пароль.</p>
+            <form action="post" class="accaunt-login">
+                <input type="text" name="login" placeholder="Логин" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <label><input type="checkbox" name="remember" checked>Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>
+                <button type="submit">Войти</button>
+            
+            </form>
+
+            <button type="button" class="popup-close">Закрыть</button>
+        </section>
 
   </body>
 </html>
