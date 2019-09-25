@@ -1,0 +1,13 @@
+{
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Default.sublime-theme",
+	"font_face": "Source Code Pro",
+    "font_size": 12,
+    "font_options": 
+    [
+    	"no_italic"
+    ],
+}
