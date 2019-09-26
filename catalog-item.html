@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
 
 		<header class="main-header">
 			<a href="index.html">
 				<img src="img/index-logo.svg" width="371" height="155" alt="Барбершоп «Бородинский»">
 			</a>
-
 			<nav class="main-navigation">
-
 				<ul class="site-navigation">
 					<li><a href="info.html">Информация</a></li>
 					<li><a href="news.html">Новости</a></li>
@@ -20,27 +21,22 @@
 					<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
-
-				<ul class="user-menu">
+				<ul class="user-navigation">
 					<li>
 						<a href="login.html">Войти</a>
 					</li>
 				</ul>
-
 			</nav>
 		</header>
 
 		<main class="container">
-			
-			<h1>Набор для путешествий «Baxter of California»</h1>
-
+			<h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="#">Средства для ухода</a></li>
 				<li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
 			</ul>
-
 			<section class="product-gallery">
 				<h2 class="visually-hidden">Изображения товара</h2>
 				<p>
@@ -52,10 +48,8 @@
 					<li><img src="img/product-small-1.jpg" width="140" height="149" alt="Картинка товара маленькая 2" class="product-preview"></li>
 					<li><img src="img/product-small-1.jpg" width="140" height="149" alt="Картинка товара маленькая 3" class="product-preview"></li>
 				</ul>
-
 			</section>
-
-			<section>
+			<section class="product-description">
 				<h2>Описание товара</h2>
 				<p class="stock">Есть в наличии</p>
 				<p class="product-code">Артикул: dexter-ae</p>
@@ -67,10 +61,9 @@
 					    после бритья, шампунь. набор также может<br>
 					     стать отличным подарком.
 				</p>
-
 				<p>
 					<b class="product-price">2 900 Р</b> 
-					<button type="button">Купить</button>
+					<button type="button" class="button price-button">Купить</button>
 				</p>
 				<h3>В набор входят:</h3>
 					<ul class="produc-complectation">
@@ -82,55 +75,49 @@
 					</ul>
 				
 			</section>
-
 		</main>
 
 		<footer class="main-footer">
-			
 			<p class="footer-address">
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8<br>
 				<a href="contacts.html">Как нас найти?</a><br>
 				Телефон: +7 (495) 666-02-66
 			</p>
-
-			<div class="social-links">
+			<div class="footer-social">
 				<p>Давайте дружить:</p>
 				<ul class="social-links">
-					<li><a href="http://vk.com" class="social-icon-vk">Вконтакте</a></li>
-					<li><a href="http://facebook.com" class="social-icon-fb">Facebook</a></li>
-					<li><a href="http://instagram.com" class="social-icon-inst">Instagram</a></li>
+					<li><a href="http://vk.com" class="social-button vk">Вконтакте</a></li>
+					<li><a href="http://facebook.com" class="social-button fb">Facebook</a></li>
+					<li><a href="http://instagram.com" class="social-button inst">Instagram</a></li>
 				</ul>
 			</div>
 
-			<p>
+			<p class="footer-copyrite">
 				Разработано
-				<a href="http://htmlacademy.ru">HTML ACADEMY</a>
+				<a href="http://htmlacademy.ru" class="button">HTML ACADEMY</a>
 			</p>
-
 		</footer>
   
-  		<section class="login-form">
-  			<h2>Личный кабинет</h2>
-  			<p>Введите пожалуйста свой логин и пароль.</p>
-  			<form action="https://echo.htmlacademy.ru" method="post" class="accaunt-login">
-                <p>
-                    <label for="user-login">Логин</label>
-                    <input type="text" id="user-login" name="user-login" placeholder="Логин" required>
-                </p>
-                <p>
-                    <label for="user-password">Пароль</label>
-                    <input type="password" id="user-password" name="user-password" placeholder="Пароль" required>
-                </p>
-                    <label><input type="checkbox" name="remember" checked>Запомните меня</label>
+  		<section class="modal login-form">
+			<h2>Личный кабинет</h2>
+			<p>Введите пожалуйста свой логин и пароль.</p>
+			<form action="https://echo.htmlacademy.ru" method="post" class="accaunt-login">
+				<p>
+					<label for="user-login">Логин</label>
+					<input type="text" id="user-login" name="user-login" placeholder="Логин" required>
+				</p>
+				<p>
+					<label for="user-password">Пароль</label>
+					<input type="password" id="user-password" name="user-password" placeholder="Пароль" required>
+				</p>
+					<label class="login-checkbox"><input type="checkbox" name="remember" checked>Запомните меня</label>
 
-                <a href="#">Я забыл пароль!</a>
-                <button type="submit">Войти</button>
-  			
-            </form>
-
-            <button type="button" class="popup-close">Закрыть</button>
-  		</section>
+				<a href="#" class="restore">Я забыл пароль!</a>
+				<button type="button" class="button">Войти</button>
+			</form>
+			<button type="button" class="popup-close">Закрыть</button>
+		</section>
 
   </body>
 </html>
